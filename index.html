@@ -1,17 +1,18 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gabarit de site web</title>
+    <meta name="description" content="description du site web" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
   </head>
 
-
   <body>
-
-     <!-- Contraintes pour le contenu de cette page :
+    <!-- Contraintes pour le contenu de cette page :
   ❏ C’est à vous de gérer l’affichage ergonomique des items selon les points de rupture.
   ❏ Les liens “Commander en ligne” et “Réserver” qui doivent mener aux pages “Ma
     commande” et “Réservation”.
@@ -21,20 +22,51 @@
 -->
 
     <header>
-      <div>logo img</div>
-      <div>logo texte</div>
+      <div class="img-logo">logo img</div>
+      <div class="txt-logo">logo texte</div>
       <nav>navigation</nav>
     </header>
 
-    <section></section>
+    <section class="présentation-resto">
+        <div class="description-resto">
+        <h2 class="nom-resto">nom du resto - niji sushi</h2>
+        <p>nouveau concept à Québec Nous sommes maintenant ouvert! 
+        Après le Quartier DIX30 à Brossard, Niji prend place à Québec, en plein cœur de
+        la Place d’Youville. Découvrez une cuisine japonaise élégante et
+        inventive, où le geste traditionnel rencontre l’audace contemporaine,
+        dans un cadre soigné et chaleureux.</p>
+
+        <a class="btn-index" href="commande.html">Commander en ligne</a>
+        <a class="btn-index" href="reservation.html">Réserver</a>
+        </div>
+
+      <img
+        class="img-resto"
+        src="/media/img resto index.jpg"
+        alt="Image du restaurant Niji"
+      />
+    </section>
+
+    <section class="témoignages">
+      <h2>Témoignages</h2>
+      <h3>clients satisfaits</h3>
+
+      <div class="grid-temoignages">
+        <div class="temoignage-1">avis 1</div>
+        <div class="temoignage-2">avis 2</div>
+        <div class="temoignage-3">avis 3</div>
+        <div class="temoignage-4">avis 4</div>
+        <div class="temoignage-5">avis 5</div>
+        <div class="temoignage-6">avis 6</div>
+      </div>
+    </section>
 
     <footer>
-      <div>réaliser par</div>
-      <div>réseaux sociaux</div>
-      <div>intégration web 1</div>
-      <div>cegep de trois-rivière</div>
-      <div>hiver 2026</div>
+      <div class="credit">réaliser par</div>
+      <div class="resaux">réseaux sociaux</div>
+      <div class="cours">intégration web 1</div>
+      <div class="cegep">cegep de trois-rivière</div>
+      <div class="annee">hiver 2026</div>
     </footer>
-
   </body>
 </html>

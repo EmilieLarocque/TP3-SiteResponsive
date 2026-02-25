@@ -1,0 +1,128 @@
+
+:root {
+    --primary-color: #333;
+    --secondary-color: #555;
+    --accent-color: #f4a261;
+    --background-color: #f4f4f4;
+    --text-color: #333;
+}
+
+/* Style général du site */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+p {
+    font-size: 14px;
+    color: var(--secondary-color);
+    margin-top: 12px;
+    opacity: .6;
+}
+
+/* En-tête / header */
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.img-logo
+{
+    width: 50px;
+    height: 50px;
+    background-color: white; /* Placeholder pour l'image du logo */
+    margin-right: 20px;
+}
+
+.txt-logo {
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 5px;
+    
+}
+
+nav {
+    margin-left: auto;
+    display: flex;
+    gap: 20px;
+}
+
+/* section présentation du restaurant */
+
+section.présentation-resto {
+    padding: 20px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+description-resto p{
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 70px;
+}
+
+img.img-resto{
+    width: 50%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+a.btn-index {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--accent-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+/* section témoignages */
+
+section.témoignages {
+    padding: 20px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+.grid-temoignages {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    align-items: center;
+    justify-items: center;
+}
+
+/* footer */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer div {
+    margin: 0 10px;
+    font-size: 12px;
+}
+
+.credit {
+    font-weight: bold;
+}
