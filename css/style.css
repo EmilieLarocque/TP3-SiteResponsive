@@ -3,6 +3,7 @@
     --primary-color: #333;
     --secondary-color: #555;
     --accent-color: #f4a261;
+
     --background-color: #f4f4f4;
     --text-color: #333;
 }
@@ -21,6 +22,24 @@ p {
     color: var(--secondary-color);
     margin-top: 12px;
     opacity: .6;
+}
+
+/* scrollbar */
+
+::-webkit-scrollbar {
+    background-color: transparent;
+    width: 4px;
+    height: 3px;
+}
+
+::-webkit-scrollbar-track {
+  width: 8px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 8px;
+  background-color: var(--background-color);
 }
 
 /* En-tête / header */
@@ -54,6 +73,23 @@ nav {
     gap: 20px;
 }
 
+a.navbar-nav:link {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 10px;
+}
+a.navbar-nav:visited {
+    border-bottom: 2px solid var(--accent-color);
+    color: white;
+}
+a.navbar-nav:hover {
+    border-bottom: 2px solid var(--accent-color);
+}
+a.navbar-nav:active {
+    border-bottom: 2px solid var(--accent-color);
+}
+
 /* section présentation du restaurant */
 
 section.présentation-resto {
@@ -66,10 +102,16 @@ section.présentation-resto {
     justify-content: center;
 }
 
-description-resto p{
-    margin-bottom: 20px;
-    margin-left: 20px;
-    margin-right: 70px;
+.box-principal-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 75%;
+}
+
+.description-resto{
+   
 }
 
 img.img-resto{
@@ -98,12 +140,61 @@ section.témoignages {
     border-radius: 8px;
 }
 
+img.img-temoignage {
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+img.img-temoignage:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
 .grid-temoignages {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
     align-items: center;
     justify-items: center;
+    color: white;
+}
+
+.temoignage-background {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--accent-color);
+    border-radius: 15px;
+    padding: 20px;
+    color: white;
+    opacity: 0.8;
+    max-width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center
+}
+.pseudo-note {
+    font-weight: bold;
+    width: 60%;
+    text-align: center;
+}
+
+.stars {
+    color: gold;
+    font-size: 16px;
+    margin-top: 0px;
+}
+
+.temoignage-content {
+    margin-top: 10px;
+    font-size: 14px;
+    color: white;
+    opacity: 0.9;
+    overflow: auto;
+    height: 100px;
+    padding: 5px;
+    font-size: 12px;
 }
 
 /* footer */
@@ -113,14 +204,18 @@ footer {
     text-align: center;
     padding: 10px;
     margin-top: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 footer div {
     margin: 0 10px;
     font-size: 12px;
+}
+
+.flex-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
 }
 
 .credit {
