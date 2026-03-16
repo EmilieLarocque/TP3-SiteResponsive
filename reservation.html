@@ -1,57 +1,131 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Page de réservation pour le restaurant">
-    <title>Gabarit de site web</title>
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style.css" />
 
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Page de réservation pour le restaurant">
+  <title>Gabarit de site web</title>
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/style.css" />
 
-  <body>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
 
-    <!-- Sur cette page, vous devez créer un formulaire de réservation (non-fonctionnel). Pour se
+<body>
+
+  <!-- Sur cette page, vous devez créer un formulaire de réservation (non-fonctionnel). Pour se
 faire, vous devez utiliser les principes et balises de formulaire qui seront vus dans le Module
 15 - Les formulaires;
 Contraintes du formulaire :
 ❏ Le formulaire doit respecter les principes d’ergonomie vus en classe;
-❏ Sauf indication contraire dans la liste ci-dessous, les champs doivent être obligatoires
-(la saisie du client est requise dans les champs).
-❏ Les champs du formulaire doivent permettre de récolter les informations suivantes :
-❏ Prénom et Nom du client.
-❏ Le numéro de téléphone du client.
-❏ Le nombre de personnes présentes pour la réservation.
-❏ La date de la réservation.
-❏ Le choix entre une réservation en “Salle à manger” ou en “Terrasse”.
-❏ L’heure de la réservation, parmi les choix suivants : 12:00 / 12:30 / 13:00 / 13:30 /
-17:00 / 17:30 / 18:00 / 18:30 / 19:00 / 19:30 / 20:00 / 20:30 / 21:00.
-❏ On doit permettre au client de laisser un commentaire supplémentaire dans le
-formulaire (champs facultatif pour le client).
-❏ Le courriel du client (champs facultatif pour le client).
-❏ Le client doit pouvoir cocher s' il veut s’inscrire à l’infolettre. (champs facultatif
-pour le client).
-❏ La soumission du formulaire doit rediriger le client vers une nouvelle page incluant le
-texte “Confirmation de votre réservation”.
+
 -->
 
-    <header>
-      <div>logo img</div>
-      <div>logo texte</div>
-      <nav>navigation</nav>
+  <header>
+      <div class="img-logo">logo img</div>
+      <div class="txt-logo">logo texte</div>
+      <nav>
+        <a class="navbar-nav" href="index.html">Accueil</a>
+        <a class="navbar-nav"href="reservation.html">Réservation</a>
+        <a class="navbar-nav" href="restaurant.html">Restaurant</a>
+        <a class="navbar-nav" href="commande.html">Ma commande</a>
+      </nav>
     </header>
 
-    <section></section>
+  <section>
 
-    <footer>
-      <div>réaliser par</div>
-      <div>réseaux sociaux</div>
-      <div>intégration web 1</div>
-      <div>cegep de trois-rivière</div>
-      <div>hiver 2026</div>
+
+    <h2>Formulaire de participation au point γ</h2>
+    <form action="validation.html" method="get">
+      <p><i>Complétez le formulaire. Les champs marqué par </i><em>*</em> sont <em>obligatoires</em></p>
+   
+      <fieldset>
+        <legend>Contact</legend>
+        <label for="nom">Prénom <em>*</em></label>
+        <input id="nom" placeholder="Olivier" autofocus="" required>
+
+        <label for="prenom">Nom <em>*</em></label>
+        <input id="prenom" placeholder="Serre" autofocus="" required><br>
+
+        <label for="telephone">Téléphone <em>*</em></label>
+        <input id="telephone" type="tel" placeholder="514-123-4567" required>
+        <label for="email">Email</label>
+        <input id="email" type="email" placeholder="prenomnom@polytechnique.edu" required><br>
+      </fieldset>
+
+      <fieldset>
+        <legend>La réservation</legend>
+        <label for="date-naissance">Date de réservation <em>*</em></label>
+        <input type="date" id="date-reservation" name="date-reservation" required>
+
+          <label for="heure">Heure <em>*</em></label>
+          <select name="heure" id="heure" required>
+            <option value="">-- Sélectionnez --</option>
+            <option value="1">12:00</option>
+            <option value="2">12:30</option>
+            <option value="3">13:00</option>
+            <option value="4">13:30</option>
+            <option value="5">17:00</option>
+            <option value="6">17:30</option>
+            <option value="7">18:00</option>
+            <option value="8">18:30</option>
+            <option value="9">19:00</option>
+            <option value="10">19:30</option>
+            <option value="11">20:00</option>
+            <option value="12">20:30</option>
+            <option value="13">21:00</option>
+          </select>
+        </br>
+
+        <label for="nombre-personnes">nombre de personnes<em>*</em></label>
+        <input id="nombre-personnes" type="number" placeholder="Nombre de personnes" autofocus="" required="">
+       
+          <label for="emplacement">Emplacement <em>*</em></label>
+          <select name="emplacement" id="emplacement" required>
+            <option value="">--Sélectionnez--</option>
+            <option value="1">Salle à manger</option>
+            <option value="2">Terrasse</option>
+          </select>
+
+      </fieldset>
+
+      <fieldset>
+        <legend>Commentaires supplémentaires</legend>  
+        <label for="comments">Commentaires</label>
+        <textarea id="comments" placeholder="Écrivez vos commentaires ici..."></textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>S'inscrire à la newsletter</legend>
+        <label for="oui">
+          <input id="oui" type="checkbox" name="newsletter" value="oui"> Oui, je souhaite m'inscrire à la newsletter
+        </label></br>
+        
+          <label for="non">
+          <input id="non" type="checkbox" name="newsletter" value="non"> Non, je ne souhaite pas m'inscrire à la newsletter
+        </label>
+      </fieldset>
+
+  <button type="submit">Valider</button>
+</form>
+
+  </section>
+
+  <footer>
+       <footer>
+      <div class="flex-footer">
+      <div class="credit">réalisé par Emilie Deraps-Larocque</div>
+      <div class="resaux">réseaux sociaux</div>
+      </div>
+<hr>
+<div class="flex-footer">
+      <div class="cours">intégration web 1</div>
+      <div class="cegep">cegep de trois-rivière</div>
+      <div class="annee">hiver 2026</div>
+      </div>
     </footer>
 
-  </body>
+</body>
+
 </html>

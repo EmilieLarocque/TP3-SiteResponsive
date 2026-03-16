@@ -1,43 +1,110 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="description du site web" />
-    <title>Gabarit de site web</title>
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style.css" />
 
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="description du site web" />
+  <title>Gabarit de site web</title>
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/style.css" />
 
-  <body>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
 
-    <!-- Contraintes pour cette page :
-❏ Vous devez créer une mosaïque d’images grâce aux propriétés de Grid (CSS3)
-❏ Vous devez utiliser vos propres images.
-❏ Par défaut, en mode desktop (largeur d’écran de plus de 1200px), les images doivent
-être positionnées comme dans la maquette.
+<body>
+
+  <!-- Contraintes pour cette page :
 ❏ La disposition des images doit être modifiée aux différents points de rupture
 (minimum de trois dispositions différentes).
 ❏ N’oubliez pas de faire au moins 1 commit (Git) pour l’intégration de cette page
 -->
 
-    <header>
-      <div>logo img</div>
-      <div>logo texte</div>
-      <nav>navigation</nav>
+  <header>
+      <div class="img-logo">logo img</div>
+      <div class="txt-logo">logo texte</div>
+      <nav>
+        <a class="navbar-nav" href="index.html">Accueil</a>
+        <a class="navbar-nav"href="reservation.html">Réservation</a>
+        <a class="navbar-nav" href="restaurant.html">Restaurant</a>
+        <a class="navbar-nav" href="commande.html">Ma commande</a>
+      </nav>
     </header>
 
-    <section></section>
+  <section>
 
-    <footer>
-      <div>réaliser par</div>
-      <div>réseaux sociaux</div>
-      <div>intégration web 1</div>
-      <div>cegep de trois-rivière</div>
-      <div>hiver 2026</div>
+    <div class="container">
+      <div class="carre-small">
+        <img src="/media/ext-resto.jpg" alt="Restaurant 1">
+      </div>
+
+      <div class="carre-small">
+        <img src="/media/resto-img.jpg" alt="Restaurant 2">
+      </div>
+
+      <div class="carre-large">
+        <img src="/media/sushi.jpg" alt="">
+      </div>
+
+      <div class="carre-large">
+        <img src="/media/terrasse.jpg" alt="">
+      </div>
+
+      <div class="carre-small">
+        <img src="/media/sushi2.jpg" alt="">
+      </div>
+
+      <div class="carre-small">
+        <img src="/media/chef.jpg" alt="">
+      </div>
+
+    </div>
+
+
+  </section>
+
+   <section>
+
+  <div class="contact-flex">
+    <div class="contact-info">
+    
+        <h2>Coordonnées</h2>
+        
+        <p>adresse</p>
+        954 rue Saint-Jean, Rue D'Youville, Québec, QC G1R 1R5
+
+        <p>téléphone</p>
+        <a href="tel:+(418) 694-1199">+(418) 694-1199</a>
+
+        <p>courriel</p>
+        <a href="mailto:info@niji.com">info@niji.com</a>
+
+        <h2>Heures d'ouverture</h2>
+        <p>Lundi au jeudi: 11h00 - 22h00</p>
+        <p>Vendredi et samedi: 11h00 - 23h00</p>
+        <p>Dimanche: 12h00 - 21h00</p>
+
+</div>
+
+<div class="contact-info">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2730.5729961646525!2d-71.21423039999999!3d46.812716599999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cb895005abe0e0d%3A0x549c981cac952e22!2sNiji%20Sushi%20Qu%C3%A9bec!5e0!3m2!1sfr!2sca!4v1773625192754!5m2!1sfr!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+  </section>
+
+     <footer>
+      <div class="flex-footer">
+      <div class="credit">réalisé par Emilie Deraps-Larocque</div>
+      <div class="resaux">réseaux sociaux</div>
+      </div>
+<hr>
+<div class="flex-footer">
+      <div class="cours">intégration web 1</div>
+      <div class="cegep">cegep de trois-rivière</div>
+      <div class="annee">hiver 2026</div>
+      </div>
     </footer>
 
-  </body>
+</body>
+
 </html>
