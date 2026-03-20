@@ -263,13 +263,13 @@ section.présentation-resto {
     object-fit: cover;
 }
 
-.meta {
+.donnes {
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
-.city {
+.ville {
     font-size: 11px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
@@ -367,7 +367,7 @@ section.présentation-resto {
         url(../media/img-resto-index.jpg) center / cover no-repeat;
 }
 
-.year {
+.an {
     position: absolute;
     bottom: 28px;
     left: 24px;
@@ -392,7 +392,7 @@ section.présentation-resto {
     backdrop-filter: blur(6px);
 }
 
-.card-label {
+.cesoir {
     font-size: 10px;
     letter-spacing: 0.18em;
     text-transform: uppercase;
@@ -400,7 +400,7 @@ section.présentation-resto {
     margin-bottom: 4px;
 }
 
-.card-value {
+.disponibilite {
     font-size: 16px;
     color: #f2ede6;
 }
@@ -1137,7 +1137,7 @@ footer div {
     #nav-desktop {
         display: none;
     }
-    
+
     .formulaire-reservation {
         margin: 10px;
         padding: 10px;
