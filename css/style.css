@@ -38,7 +38,7 @@ h1, h2, h3 {
 
 a {
     text-decoration: none;
-    color: var(--creme);
+    color: var(--gris);
     transition: color 0.2s ease;
 }
 
