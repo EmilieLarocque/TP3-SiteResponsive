@@ -1,193 +1,227 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gabarit de site web</title>
-    <meta name="description" content="Page de commande pour le restaurant" />
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style.css" />
 
-<script src="script/script.js"></script>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gabarit de site web</title>
+  <meta name="description" content="Page de commande pour le restaurant" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/style.css" />
 
-<!-- Font Awesome -->
+  <script src="script/script.js"></script>
+
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-  </head>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
 
-  <body>
+<body>
 
-    <!-- Contraintes pour cette page :
-❏ Vous devez obligatoirement utiliser des tableaux html dans cette page.
--->
-
-<header>
+  <header>
     <div class="img-logo">
-      <img src="" alt=""> 
-      <div class="txt-logo">logo texte</div></div>
-    
- 
-    <!-- nav desktop -->
+      <img src="media/logo.png" alt="">
+      <div class="txt-logo">Niji sushi</div>
+    </div>
+
     <nav id="nav-desktop">
-        <a class="navbar-nav" href="index.html">Accueil</a>
-        <a class="navbar-nav" href="reservation.html">Réservation</a>
-        <a class="navbar-nav" href="restaurant.html">Restaurant</a>
-        <a class="navbar-nav" href="commande.html">Ma commande</a>
+      <a class="navbar-nav" href="index.html">Accueil</a>
+      <a class="navbar-nav" href="reservation.html">Réservation</a>
+      <a class="navbar-nav" href="restaurant.html">Restaurant</a>
+      <a class="navbar-nav" href="commande.html">Ma commande</a>
     </nav>
- 
-    <!-- bouton burger -->
+
     <button class="burger" id="burger" aria-label="Menu">
-        <span></span>
-        <span></span>
-        <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
     </button>
- 
-    <!-- nav mobile -->
+
     <nav class="nav-mobile" id="nav-mobile">
-        <a href="index.html">Accueil</a>
-        <a href="reservation.html">Réservation</a>
-        <a href="restaurant.html">Restaurant</a>
-        <a href="commande.html">Ma commande</a>
+      <a href="index.html">Accueil</a>
+      <a href="reservation.html">Réservation</a>
+      <a href="restaurant.html">Restaurant</a>
+      <a href="commande.html">Ma commande</a>
     </nav>
-</header>
+  </header>
 
+  <section class="menu">
     <main>
-    <section class="menu">
+      <h1>Ma Commande</h1>
 
- 
+      <div class="content-menu">
 
-      <div>
-         <h1>Ma Commande</h1>
+        <div class="cat-menu">
+          <p class="cat-menu-title">Entrées</p>
+          <table>
+            <thead>
+              <tr>
+                <th>Nom du plat</th>
+                <th>Prix</th>
+                <th>Qté</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="name-plat">Edamame Fleur de Sel</div>
+                  <div class="desc-plat">Fèves de soja, sel de mer</div>
+                </td>
+                <td>5.99 $</td>
+                <td><span class="quantite-badge">2</span></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="name-plat">Gyoza Croustillants</div>
+                  <div class="desc-plat">Porc & chou, sauce ponzu</div>
+                </td>
+                <td>8.99 $</td>
+                <td><span class="quantite-badge">1</span></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="name-plat">Salade de Wakamé</div>
+                  <div class="desc-plat">Algues, sésame, huile de sésame</div>
+                </td>
+                <td>6.49 $</td>
+                <td><span class="quantite-badge">1</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
 
-         <h2>Entrée</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Nom du plat</th>
-            <th>prix</th>
-            <th>Quantité</th>
-          </tr>
-        </thead>
+        <div class="cat-menu">
+          <p class="cat-menu-title">Plats Principaux</p>
+          <table>
+            <thead>
+              <tr>
+                <th>Nom du plat</th>
+                <th>Prix</th>
+                <th>Qté</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="name-plat">Chirashi Saumon & Thon</div>
+                  <div class="desc-plat">Riz vinaigré, ikura, tobiko</div>
+                </td>
+                <td>22.99 $</td>
+                <td><span class="quantite-badge">1</span></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="name-plat">Dragon Roll</div>
+                  <div class="desc-plat">Crevette tempura, avocat, anguille</div>
+                </td>
+                <td>17.99 $</td>
+                <td><span class="quantite-badge">2</span></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="name-plat">Nigiri Omakase (10 pcs)</div>
+                  <div class="desc-plat">Sélection du chef du jour</div>
+                </td>
+                <td>28.99 $</td>
+                <td><span class="quantite-badge">1</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
 
-        <tbody>
-          <tr>
-            <td>Sushi Mixte</td>
-            <td>15.99 $</td>
-            <td>2</td>
-          </tr>
-          <tr>
-            <td>Roll California</td>
-            <td>12.99 $</td>
-            <td>1</td>
-          </tr>
-
-          <tr>
-            <td>Roll California</td>
-            <td>12.99 $</td>
-            <td>1</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <h2>Plats Principaux</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Nom du plat</th>
-            <th>prix</th>
-            <th>Quantité</th>
-          </tr>
-        </thead>
-
-        <tbody>
-          <tr>
-            <td>Sushi Mixte</td>
-            <td>15.99 $</td>
-            <td>2</td>
-          </tr>
-          <tr>
-            <td>Roll California</td>
-            <td>12.99 $</td>
-            <td>1</td>
-          </tr>
-
-          <tr>
-            <td>Roll California</td>
-            <td>12.99 $</td>
-            <td>1</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <h2>Autres</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Nom du plat</th>
-            <th>prix</th>
-            <th>Quantité</th>
-          </tr>
-        </thead>
-
-        <tbody>
-          <tr>
-            <td>Sushi Mixte</td>
-            <td>15.99 $</td>
-            <td>2</td>
-          </tr>
-          <tr>
-            <td>Roll California</td>
-            <td>12.99 $</td>
-            <td>1</td>
-          </tr>
-
-          <tr>
-            <td>Roll California</td>
-            <td>12.99 $</td>
-            <td>1</td>
-          </tr>
-        </tbody>
-      </table>
-
-
-      </div>
-
-      <div>
-        <h2>Détails de la commande</h2>
-
-        <h3>Sous-total : 29.96 $</h3>
-        
-
-        <h3>Taxes (15%):  4.49 $</h3>
-       
-        <hr>
-        <h3>Total à payer: 34.45 $</h3>
-
-        <a class="btn-index" href="validation.html">Confirmer la commande</a>
-      </div>
-    </section>
-    </main>
-
-       <footer>
-      <div class="flex-footer">
-      <div class="credit">réalisé par Emilie Deraps-Larocque</div>
-      <div class="reseaux">
-          <a href="#"><i class="fab fa-facebook"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-tiktok"></i></a>
-          <a href="#"><i class="fab fa-youtube"></i></a>
+        <div class="cat-menu">
+          <p class="cat-menu-title">Boissons & Autres</p>
+          <table>
+            <thead>
+              <tr>
+                <th>Nom du plat</th>
+                <th>Prix</th>
+                <th>Qté</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="name-plat">Sake Chaud (300 ml)</div>
+                  <div class="desc-plat">Junmai, servie traditionnellement</div>
+                </td>
+                <td>9.99 $</td>
+                <td><span class="quantite-badge">1</span></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="name-plat">Mochi Glacé</div>
+                  <div class="desc-plat">Matcha, framboise ou vanille (x3)</div>
+                </td>
+                <td>7.49 $</td>
+                <td><span class="quantite-badge">2</span></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="name-plat">Thé Vert Sencha</div>
+                  <div class="desc-plat">Infusion japonaise, service à la théière</div>
+                </td>
+                <td>3.99 $</td>
+                <td><span class="quantite-badge">1</span></td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
-<hr>
-<div class="flex-footer">
+
+    </main>
+
+    <aside class="recap">
+      <h2>Détails de la commande</h2>
+
+      <div class="recap-line">
+        <span>Sous-total</span>
+        <span>119.89 $</span>
+      </div>
+      <div class="recap-line">
+        <span>Taxes (15 %)</span>
+        <span>17.98 $</span>
+      </div>
+      <div class="recap-line">
+        <span>Livraison</span>
+        <span>Gratuite</span>
+      </div>
+
+      <hr />
+
+      <div class="recap-total">
+        <span class="label">Total à payer</span>
+        <span class="amount">137.87 $</span>
+      </div>
+
+      <a class="bouton-confirm" href="validation.html">Confirmer la commande</a>
+    </aside>
+
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="flex-footer">
+      <div class="credit">réalisé par Emilie Deraps-Larocque</div>
+      <div class="reseaux">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+    <hr>
+    <div class="flex-footer">
       <div class="cours">intégration web 1</div>
       <div class="cegep">cegep de trois-rivière</div>
       <div class="annee">hiver 2026</div>
-      </div>
-    </footer>
+    </div>
+  </footer>
 
-  </body>
+</body>
+
 </html>
