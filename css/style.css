@@ -658,122 +658,125 @@ button:hover,
     padding: 40px 20px;
 }
 
- .validation-card {
-        background: var(--creme);
-        border-radius: 8px;
-        max-width: 620px;
-        width: 100%;
-        overflow: hidden;
-        box-shadow: 0 4px 40px rgba(42,32,24,0.08);
-        animation: monter 0.6s ease both;
-      }
+.validation-card {
+    background: var(--creme);
+    border-radius: 8px;
+    max-width: 620px;
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 0 4px 40px rgba(42, 32, 24, 0.08);
+    animation: monter 0.6s ease both;
+}
 
-       .validation-bandeau {
-        background: var(--sombre);
-        padding: 40px 40px 32px;
-        text-align: center;
-        position: relative;
-        overflow: hidden;
-      }
- 
-      .validation-bandeau::before {
-        content: '';
-        position: absolute;
-        inset: 0;
-        background: radial-gradient(ellipse 80% 60% at 50% 110%, rgba(196,117,106,0.18) 0%, transparent 70%);
-        pointer-events: none;
-      }
- 
-      .icone-cercle {
-        width: 72px;
-        height: 72px;
-        border-radius: 50%;
-        border: 1.5px solid var(--rose-pale);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 0 auto 20px;
-        position: relative;
-        animation: apparaitre 0.5s 0.35s ease both;
-      }
- 
+.validation-bandeau {
+    background: var(--sombre);
+    padding: 40px 40px 32px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.validation-bandeau::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse 80% 60% at 50% 110%, rgba(196, 117, 106, 0.18) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.icone-cercle {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    border: 1.5px solid var(--rose-pale);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    position: relative;
+    animation: apparaitre 0.5s 0.35s ease both;
+}
+
 .icone-cercle::after {
-        content: '';
-        position: absolute;
-        inset: -6px;
-        border-radius: 50%;
-        border: 0.5px solid rgba(232,181,174,0.2);
-      }
- 
-      .icone-cercle i {
-        font-size: 26px;
-        color: var(--rose-pale);
-      }
- 
-      .validation-titre {
-        font-family: 'Shippori Mincho', serif;
-        font-size: 1.7rem;
-        font-weight: 800;
-        color: var(--creme);
-        margin-bottom: 8px;
-        line-height: 1.1;
-        animation: monter 0.5s 0.45s ease both;
-      }
- 
-      .validation-sous-titre {
-        font-size: 0.78rem;
-        letter-spacing: 0.2em;
-        text-transform: uppercase;
-        color: var(--or-pale);
-        animation: monter 0.5s 0.55s ease both;
-      }
+    content: '';
+    position: absolute;
+    inset: -6px;
+    border-radius: 50%;
+    border: 0.5px solid rgba(232, 181, 174, 0.2);
+}
 
-        .validation-actions {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        animation: monter 0.5s 0.85s ease both;
-      }
- 
-      .btn-accueil {
-        display: block;
-        padding: 1rem;
-        margin-top: 10px;
-        background: var(--rose);
-        color: var(--creme);
-        text-align: center;
-        text-decoration: none;
-        font-family: 'DM Sans', sans-serif;
-        font-size: 0.82rem;
-        font-weight: 500;
-        letter-spacing: 0.14em;
-        text-transform: uppercase;
-        border-radius: 2px;
-        transition: opacity 0.2s, transform 0.15s;
-      }
- 
-      .btn-accueil:hover { opacity: 0.88; transform: translateY(-1px); }
- 
-      .btn-menu {
-        display: block;
-        padding: 0.9rem;
-        background: transparent;
-        color: var(--gris);
-        text-align: center;
-        text-decoration: none;
-        font-size: 0.78rem;
-        font-weight: 400;
-        letter-spacing: 0.12em;
-        text-transform: uppercase;
-        border: 0.5px solid var(--rose-pale);
-        border-radius: 2px;
-        transition: background 0.2s, color 0.2s;
-      }
- 
-      .btn-menu:hover {
-        background: var(--rose-leger);
-        color: var(--sombre);
-      }
+.icone-cercle i {
+    font-size: 26px;
+    color: var(--rose-pale);
+}
+
+.validation-titre {
+    font-family: 'Shippori Mincho', serif;
+    font-size: 1.7rem;
+    font-weight: 800;
+    color: var(--creme);
+    margin-bottom: 8px;
+    line-height: 1.1;
+    animation: monter 0.5s 0.45s ease both;
+}
+
+.validation-sous-titre {
+    font-size: 0.78rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--or-pale);
+    animation: monter 0.5s 0.55s ease both;
+}
+
+.validation-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    animation: monter 0.5s 0.85s ease both;
+}
+
+.btn-accueil {
+    display: block;
+    padding: 1rem;
+    margin-top: 10px;
+    background: var(--rose);
+    color: var(--creme);
+    text-align: center;
+    text-decoration: none;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.82rem;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    border-radius: 2px;
+    transition: opacity 0.2s, transform 0.15s;
+}
+
+.btn-accueil:hover {
+    opacity: 0.88;
+    transform: translateY(-1px);
+}
+
+.btn-menu {
+    display: block;
+    padding: 0.9rem;
+    background: transparent;
+    color: var(--gris);
+    text-align: center;
+    text-decoration: none;
+    font-size: 0.78rem;
+    font-weight: 400;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    border: 0.5px solid var(--rose-pale);
+    border-radius: 2px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.btn-menu:hover {
+    background: var(--rose-leger);
+    color: var(--sombre);
+}
 
 /* grid de la page restauration */
 .container {
@@ -1077,6 +1080,7 @@ footer div {
 
 /* RESPONSIVE */
 @media (max-width: 1200px) {
+
     /* FORMULAIRE */
     .formulaire-reservation {
         margin: 15px;
