@@ -9,49 +9,68 @@
   <link rel="stylesheet" href="css/normalize.css" />
   <link rel="stylesheet" href="css/style.css" />
 
+  <script src="script/script.js"></script>
+
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 
 <body>
 
-  <!-- Sur cette page, vous devez créer un formulaire de réservation (non-fonctionnel). Pour se
-faire, vous devez utiliser les principes et balises de formulaire qui seront vus dans le Module
-15 - Les formulaires;
-Contraintes du formulaire :
-❏ Le formulaire doit respecter les principes d’ergonomie vus en classe;
-
--->
-
-  <header>
-      <div class="img-logo">logo img</div>
-      <div class="txt-logo">logo texte</div>
-      <nav>
+<header>
+    <div class="img-logo">
+      <img src="" alt=""> 
+      <div class="txt-logo">logo texte</div></div>
+    
+ 
+    <!-- nav desktop -->
+    <nav id="nav-desktop">
         <a class="navbar-nav" href="index.html">Accueil</a>
-        <a class="navbar-nav"href="reservation.html">Réservation</a>
+        <a class="navbar-nav" href="reservation.html">Réservation</a>
         <a class="navbar-nav" href="restaurant.html">Restaurant</a>
         <a class="navbar-nav" href="commande.html">Ma commande</a>
-      </nav>
-    </header>
+    </nav>
+ 
+    <!-- bouton burger -->
+    <button class="burger" id="burger" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+ 
+    <!-- nav mobile -->
+    <nav class="nav-mobile" id="nav-mobile">
+        <a href="index.html">Accueil</a>
+        <a href="reservation.html">Réservation</a>
+        <a href="restaurant.html">Restaurant</a>
+        <a href="commande.html">Ma commande</a>
+    </nav>
+</header>
 
-  <section>
+  <div class="formulaire-reservation">
 
 
-    <h2>Formulaire de participation au point γ</h2>
+
     <form action="validation.html" method="get">
-      <p><i>Complétez le formulaire. Les champs marqué par </i><em>*</em> sont <em>obligatoires</em></p>
-   
+      <h2>Formulaire de réservation</h2>
+      <p><i>Complétez le formulaire.
+          Les champs marqué par </i><em>*</em> sont <em>obligatoires</em></p>
+
       <fieldset>
         <legend>Contact</legend>
         <label for="nom">Prénom <em>*</em></label>
-        <input id="nom" placeholder="Olivier" autofocus="" required>
+        <input id="nom" placeholder="ex: Olivier" autofocus="" required>
 
         <label for="prenom">Nom <em>*</em></label>
-        <input id="prenom" placeholder="Serre" autofocus="" required><br>
+        <input id="prenom" placeholder="ex: Serre" autofocus="" required><br>
 
         <label for="telephone">Téléphone <em>*</em></label>
-        <input id="telephone" type="tel" placeholder="514-123-4567" required>
+        <input id="telephone" type="tel" placeholder="ex: 514-123-4567" required>
         <label for="email">Email</label>
-        <input id="email" type="email" placeholder="prenomnom@polytechnique.edu" required><br>
+        <input id="email" type="email" placeholder="ex: prenomnom@hotmail.com" required>
       </fieldset>
 
       <fieldset>
@@ -59,70 +78,84 @@ Contraintes du formulaire :
         <label for="date-naissance">Date de réservation <em>*</em></label>
         <input type="date" id="date-reservation" name="date-reservation" required>
 
-          <label for="heure">Heure <em>*</em></label>
-          <select name="heure" id="heure" required>
-            <option value="">-- Sélectionnez --</option>
-            <option value="1">12:00</option>
-            <option value="2">12:30</option>
-            <option value="3">13:00</option>
-            <option value="4">13:30</option>
-            <option value="5">17:00</option>
-            <option value="6">17:30</option>
-            <option value="7">18:00</option>
-            <option value="8">18:30</option>
-            <option value="9">19:00</option>
-            <option value="10">19:30</option>
-            <option value="11">20:00</option>
-            <option value="12">20:30</option>
-            <option value="13">21:00</option>
-          </select>
+        <label for="heure">Heure <em>*</em></label>
+        <select name="heure" id="heure" required>
+          <option value="">-- Sélectionnez --</option>
+          <option value="1">12:00</option>
+          <option value="2">12:30</option>
+          <option value="3">13:00</option>
+          <option value="4">13:30</option>
+          <option value="5">17:00</option>
+          <option value="6">17:30</option>
+          <option value="7">18:00</option>
+          <option value="8">18:30</option>
+          <option value="9">19:00</option>
+          <option value="10">19:30</option>
+          <option value="11">20:00</option>
+          <option value="12">20:30</option>
+          <option value="13">21:00</option>
+        </select>
         </br>
 
-        <label for="nombre-personnes">nombre de personnes<em>*</em></label>
+        <label for="nombre-personnes">Nombre de personnes <em>*</em></label>
         <input id="nombre-personnes" type="number" placeholder="Nombre de personnes" autofocus="" required="">
-       
-          <label for="emplacement">Emplacement <em>*</em></label>
-          <select name="emplacement" id="emplacement" required>
-            <option value="">--Sélectionnez--</option>
-            <option value="1">Salle à manger</option>
-            <option value="2">Terrasse</option>
-          </select>
+
+        <label for="emplacement">Emplacement <em>*</em></label>
+        <select name="emplacement" id="emplacement" required>
+          <option value="">--Sélectionnez--</option>
+          <option value="1">Salle à manger</option>
+          <option value="2">Terrasse</option>
+        </select>
 
       </fieldset>
 
       <fieldset>
-        <legend>Commentaires supplémentaires</legend>  
+        <legend>Commentaires</legend>
         <label for="comments">Commentaires</label>
         <textarea id="comments" placeholder="Écrivez vos commentaires ici..."></textarea>
       </fieldset>
 
       <fieldset>
         <legend>S'inscrire à la newsletter</legend>
-        <label for="oui">
-          <input id="oui" type="checkbox" name="newsletter" value="oui"> Oui, je souhaite m'inscrire à la newsletter
-        </label></br>
-        
-          <label for="non">
-          <input id="non" type="checkbox" name="newsletter" value="non"> Non, je ne souhaite pas m'inscrire à la newsletter
-        </label>
+
+
+        <div class="option-newsletter">
+          <input type="checkbox" id="oui-newsletter">
+          <label for="oui-newsletter">Oui, je souhaite m'inscrire à la newsletter</label>
+        </div>
+
+
+        <div class="option-newsletter">
+          <input type="checkbox" id="non-newsletter">
+          <label for="non-newsletter">Non, je ne souhaite pas m'inscrire à la newsletter</label>
+        </div>
+
+
+
       </fieldset>
 
-  <button type="submit">Valider</button>
-</form>
+      <button class="btn-blush" type="submit">Valider <span class="chevron">›</span></button>
+    </form>
 
-  </section>
+  </div>
 
   <footer>
-       <footer>
+    <footer>
       <div class="flex-footer">
-      <div class="credit">réalisé par Emilie Deraps-Larocque</div>
-      <div class="resaux">réseaux sociaux</div>
+        <div class="credit">réalisé par Emilie Deraps-Larocque</div>
+        <div class="reseaux">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-tiktok"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
       </div>
-<hr>
-<div class="flex-footer">
-      <div class="cours">intégration web 1</div>
-      <div class="cegep">cegep de trois-rivière</div>
-      <div class="annee">hiver 2026</div>
+      <hr>
+      <div class="flex-footer">
+        <div class="cours">intégration web 1</div>
+        <div class="cegep">cegep de trois-rivière</div>
+        <div class="annee">hiver 2026</div>
       </div>
     </footer>
 

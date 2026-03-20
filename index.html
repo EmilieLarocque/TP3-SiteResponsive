@@ -1,139 +1,236 @@
 <!doctype html>
 <html lang="fr">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gabarit de site web</title>
-    <meta name="description" content="description du site web" />
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style.css" />
 
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gabarit de site web</title>
+  <meta name="description" content="description du site web" />
 
-  <body>
-    <!-- Contraintes pour le contenu de cette page :
-  ❏ C’est à vous de gérer l’affichage ergonomique des items selon les points de rupture.
-  ❏ Les liens “Commander en ligne” et “Réserver” qui doivent mener aux pages “Ma
-    commande” et “Réservation”.
-  ❏ Vous devez utiliser vos propres images (consultez des banques d’images libres de droits
-    tel que Pexel, Pixabay, UnSplash et autres)
-  ❏ N’oubliez pas de faire au moins 1 commit (Git) pour l’intégration de cette page
--->
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  
+  <script src="script/script.js"></script>
 
-    <header>
-      <div class="img-logo">logo img</div>
-      <div class="txt-logo">logo texte</div>
-      <nav>
+  <link rel="icon" type="image/x-icon" href="media/logo.png" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<header>
+    <div class="img-logo">
+      <img src="media/logo.png" alt=""> 
+      <div class="txt-logo">Niji sushi</div></div>
+    
+ 
+    <!-- nav desktop -->
+    <nav id="nav-desktop">
         <a class="navbar-nav" href="index.html">Accueil</a>
-        <a class="navbar-nav"href="reservation.html">Réservation</a>
+        <a class="navbar-nav" href="reservation.html">Réservation</a>
         <a class="navbar-nav" href="restaurant.html">Restaurant</a>
         <a class="navbar-nav" href="commande.html">Ma commande</a>
-      </nav>
-    </header>
+    </nav>
+ 
+    <!-- bouton burger -->
+    <button class="burger" id="burger" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+ 
+    <!-- nav mobile -->
+    <nav class="nav-mobile" id="nav-mobile">
+        <a href="index.html">Accueil</a>
+        <a href="reservation.html">Réservation</a>
+        <a href="restaurant.html">Restaurant</a>
+        <a href="commande.html">Ma commande</a>
+    </nav>
+</header>
 
-    <section class="présentation-resto">
-      <div class="box-principal-section">
-        <div class="description-resto">
-        <h2 class="nom-resto">nom du resto - niji sushi</h2>
-        <p>nouveau concept à Québec Nous sommes maintenant ouvert! 
-        Après le Quartier DIX30 à Brossard, Niji prend place à Québec, en plein cœur de
-        la Place d’Youville. Découvrez une cuisine japonaise élégante et
-        inventive, où le geste traditionnel rencontre l’audace contemporaine,
-        dans un cadre soigné et chaleureux.</p>
+  <section class="présentation-resto">
+    <div class="box-principal-section">
 
-        <a class="btn-index" href="commande.html">Commander en ligne</a>
-        <a class="btn-index" href="reservation.html">Réserver</a>
+      <div class="description-resto">
+
+        <div class="tags">
+          <span class="tag">#Gastronomie</span>
+          <span class="tag">#Cuisine Française</span>
+          <span class="tag">#Table d'exception</span>
         </div>
 
-      <img
-        class="img-resto"
-        src="/media/img-resto-index.jpg"
-        alt="Image du restaurant Niji"
-      />
-      </div>
-    </section>
+        
+          <h1 class="title-index">
+            L'art<br>
+            de la <em>table</em>
+          </h1>
+        
 
-    <section class="témoignages">
-      <h2>Témoignages</h2>
-      <h3>clients satisfaits</h3>
+        <p class="desc">nouveau concept à Québec Nous sommes maintenant ouvert!
+          Après le Quartier DIX30 à Brossard, Niji prend place à Québec, en plein cœur de
+          la Place d’Youville. Découvrez une cuisine japonaise élégante et
+          inventive, où le geste traditionnel rencontre l’audace contemporaine,
+          dans un cadre soigné et chaleureux.</p>
 
-      <div class="grid-temoignages">
 
-        <div class="temoignage-background">
-          <img class="img-temoignage" src="https://images2.imgbox.com/fc/e7/5gcDQVmm_o.gif" alt=""> 
-          <span class="pseudo-note">PJuliana Macedo
-            <p class="stars">★★★★</p>
-          </span>
-          
-          <p class="temoignage-content">L’endroit est magnifique et confortable. Le service est très bon et, dès l’arrivée, on nous remet une petite serviette chaude, ce que j’ai trouvé très premium.
-
-En revanche, la présentation des plats m’a un peu déçue, car je ne les ai pas trouvés particulièrement beaux. Ils étaient assez ordinaires. J’avais vu ici certaines photos de plats très bien présentés, mais dans mon cas, je n’ai pas trouvé que les assiettes étaient bien montées. Le hosomaki, en particulier, m’a semblé très mal monté. Le restaurant donne une impression de sophistication — et les prix ne sont pas particulièrement bas — mais les plats viennent casser cette perception, en rappelant davantage des sushis que l’on pourrait retrouver dans un restaurant à volonté. Je m’attendais à mieux sur le plan de la présentation.
-Les sushis étaient tous bons. Ils n’étaient pas incroyables — clairement pas les meilleurs de ma vie — mais ils étaient bons.
-
-Je suis assez critique en matière de sushi, car j’en fais à la maison depuis plusieurs années et j’ai même suivi un cours. Dans ce cas-ci, je peux dire que le riz était à un point optimal : les grains n’étaient ni trop durs ni trop mous, et le poisson était bien frais.
-Cependant, il manquait ce petit « Q » en plus.
-Cela dit, dans l’ensemble, ce fut une bonne expérience et j’y retournerais.</p>
-        </div>
-
-        <div class="temoignage-background">
-          <img class="img-temoignage" src="https://images2.imgbox.com/fc/e7/5gcDQVmm_o.gif" alt=""> 
-          <span class="pseudo-note">Patrick Riendeau
-            <p class="stars">★★★★★</p>
-          </span>
-
-          <p class="temoignage-content">Restaurant choisi pour un anniversaire à deux. La nourriture était exquise, le service était exceptionnel et très professionnel, l'ambiance est sublime avec les Sakura.
-Nous avons absolument adorés notre expérience, nous y retournerons!
-
-Le seul hic est le montant de la facture, mais vu la qualité ce n'est pas surprenant. C'est une expérience à vivre à 100%!</p>
-        </div>
-
-        <div class="temoignage-background">
-          <img class="img-temoignage" src="https://images2.imgbox.com/fc/e7/5gcDQVmm_o.gif" alt=""> 
-          <span class="pseudo-note">A S (Thetravaler)
-            <p class="stars">★★★★★</p>
-          </span>
-
-          <p class="temoignage-content">ller au Niji Sushi Bar, c'est vraiment une expérience. Mention au personnel qui sont dévoués, gentils et vraiment à l'écoute. Pour les goûts en tant que tel, gros coup de cœur. Mention spécial à la mignonette des huîtres ainsi que les sushis poêlés au foie gras qui fut un véritable coup de cœur pour moi et mon amie. Le décor également, québec avait grandement besoin d'un endroit de sushis comme celui là. 💕🤍</p>
-        </div>
-        <div class="temoignage-background">
-          <img class="img-temoignage" src="https://images2.imgbox.com/fc/e7/5gcDQVmm_o.gif" alt=""> 
-          <span class="pseudo-note">Pseudo 1
-            <p class="stars">★★★★★</p>
-          </span>
-
-          <p class="temoignage-content">Témoignage 4</p>
-        </div>
-        <div class="temoignage-background">
-          <img class="img-temoignage" src="https://images2.imgbox.com/fc/e7/5gcDQVmm_o.gif" alt=""> 
-          <span class="pseudo-note">Pseudo 1
-            <p class="stars">★★★★★</p>
-          </span>
-
-          <p class="temoignage-content">Témoignage 5</p>
-        </div>
-        <div class="temoignage-background">
-          <img class="img-temoignage" src="https://images2.imgbox.com/fc/e7/5gcDQVmm_o.gif" alt=""> 
-          <span class="pseudo-note">Pseudo 1
-            <p class="stars">★★★★★</p>
-          </span>
-
-          <p class="temoignage-content">Témoignage 6</p>
+        <div class="hero-meta">
+          <span class="hero-city">Québec</span>
+          <div class="hero-dot"></div>
+          <a class="hero-cta" href="commande.html">
+            Commander en ligne
+            <div class="hero-arrow">
+              <svg viewBox="0 0 24 24">
+                <path d="m7 17 10-10M7 7h10v10" />
+              </svg>
+            </div>
+          </a>
+          <div class="hero-dot"></div>
+          <a class="hero-cta" href="reservation.html">
+            Réserver
+            <div class="hero-arrow">
+              <svg viewBox="0 0 24 24">
+                <path d="m7 17 10-10M7 7h10v10" />
+              </svg>
+            </div>
+          </a>
         </div>
       </div>
-    </section>
 
-    <footer>
-      <div class="flex-footer">
+      <div class="img-bg-droite">
+        <div class="img-bg-droite"></div>
+      <div class="hero-year">Depuis 1998</div>
+      <div class="hero-card">
+        <div class="hero-card-label">Ce soir</div>
+        <div class="hero-card-value">Table disponible</div>
+       
+      </div>
+
+    </div>
+  </section>
+
+  <section class="bottom-bar">
+    <div class="bottom-item">
+      <span class="bottom-label">Horaires</span>
+      <span class="bottom-value">Mar–Sam · <span class="bottom-accent">17h–23h</span></span>
+    </div>
+    <div class="bottom-item">
+      <span class="bottom-label">Cuisine</span>
+      <span class="bottom-value">Française <span class="bottom-accent">· Gastronomique</span></span>
+    </div>
+  </section>
+
+  <section class="témoignages">
+    <div class="title-avis">
+    <h2 class="avis">Témoignages</h2>
+    <h3 class="avis">clients satisfaits</h3>
+    </div>
+
+    <div class="grid-temoignages">
+
+      <div class="temoignage-background">
+        <img class="img-temoignage" src="https://images2.imgbox.com/fc/e7/5gcDQVmm_o.gif" alt="">
+        <span class="pseudo-note">PJuliana Macedo
+          <p class="stars">★★★★</p>
+        </span>
+
+        <p class="temoignage-content">L’endroit est magnifique et confortable. Le service est très bon et, dès
+          l’arrivée, on nous remet une petite serviette chaude, ce que j’ai trouvé très premium.
+
+          En revanche, la présentation des plats m’a un peu déçue, car je ne les ai pas trouvés particulièrement beaux.
+          Ils étaient assez ordinaires. J’avais vu ici certaines photos de plats très bien présentés, mais dans mon cas,
+          je n’ai pas trouvé que les assiettes étaient bien montées. Le hosomaki, en particulier, m’a semblé très mal
+          monté. Le restaurant donne une impression de sophistication — et les prix ne sont pas particulièrement bas —
+          mais les plats viennent casser cette perception, en rappelant davantage des sushis que l’on pourrait retrouver
+          dans un restaurant à volonté. Je m’attendais à mieux sur le plan de la présentation.
+          Les sushis étaient tous bons. Ils n’étaient pas incroyables — clairement pas les meilleurs de ma vie — mais
+          ils étaient bons.
+
+          Je suis assez critique en matière de sushi, car j’en fais à la maison depuis plusieurs années et j’ai même
+          suivi un cours. Dans ce cas-ci, je peux dire que le riz était à un point optimal : les grains n’étaient ni
+          trop durs ni trop mous, et le poisson était bien frais.
+          Cependant, il manquait ce petit « Q » en plus.
+          Cela dit, dans l’ensemble, ce fut une bonne expérience et j’y retournerais.</p>
+      </div>
+
+      <div class="temoignage-background">
+        <img class="img-temoignage" src="https://images2.imgbox.com/fc/e7/5gcDQVmm_o.gif" alt="">
+        <span class="pseudo-note">Patrick Riendeau
+          <p class="stars">★★★★★</p>
+        </span>
+
+        <p class="temoignage-content">Restaurant choisi pour un anniversaire à deux. La nourriture était exquise, le
+          service était exceptionnel et très professionnel, l'ambiance est sublime avec les Sakura.
+          Nous avons absolument adorés notre expérience, nous y retournerons!
+
+          Le seul hic est le montant de la facture, mais vu la qualité ce n'est pas surprenant. C'est une expérience à
+          vivre à 100%!</p>
+      </div>
+
+      <div class="temoignage-background">
+        <img class="img-temoignage" src="https://images2.imgbox.com/fc/e7/5gcDQVmm_o.gif" alt="">
+        <span class="pseudo-note">A S (Thetravaler)
+          <p class="stars">★★★★★</p>
+        </span>
+
+        <p class="temoignage-content">ller au Niji Sushi Bar, c'est vraiment une expérience. Mention au personnel qui
+          sont dévoués, gentils et vraiment à l'écoute. Pour les goûts en tant que tel, gros coup de cœur. Mention
+          spécial à la mignonette des huîtres ainsi que les sushis poêlés au foie gras qui fut un véritable coup de cœur
+          pour moi et mon amie. Le décor également, québec avait grandement besoin d'un endroit de sushis comme celui
+          là. 💕🤍</p>
+      </div>
+      <div class="temoignage-background">
+        <img class="img-temoignage" src="https://images2.imgbox.com/fc/e7/5gcDQVmm_o.gif" alt="">
+        <span class="pseudo-note">Sandra Pepin
+          <p class="stars">★★★★★</p>
+        </span>
+
+        <p class="temoignage-content">WoW quelle belle découverte! Nouveau restaurant à 2 pas du capitole place d’Youville. 
+          Excellent service, magnifique restaurant et nourriture incroyable. Les sushis était merveilleux !! Quand même assez 
+          dispendieux, mais nous avons été très satisfaites. Produit de qualité . Merci !!!</p>
+      </div>
+      <div class="temoignage-background">
+        <img class="img-temoignage" src="https://images2.imgbox.com/fc/e7/5gcDQVmm_o.gif" alt="">
+        <span class="pseudo-note">Coralie Legault
+          <p class="stars">★★★★★</p>
+        </span>
+
+        <p class="temoignage-content">Vraiment une belle expérience! Malgré le rush, le gérant et son équipe ont été vraiment 
+          attentionnés et les plats sont arrivés rapidement tout de même. C’était délicieux et le rapport qualité prix est très 
+          bon. Le décor est magnifique aussi.</p>
+      </div>
+      <div class="temoignage-background">
+        <img class="img-temoignage" src="https://images2.imgbox.com/fc/e7/5gcDQVmm_o.gif" alt="">
+        <span class="pseudo-note">Isabelle Dupuis
+          <p class="stars">★★★★★</p>
+        </span>
+
+        <p class="temoignage-content">Première expérience chez Niji Sushi, mais pas la dernière. Tout était parfait :nourriture, 
+          service, ambiance. Le personnel est souhaite vraiment offrir une expérience unique. Ce restaurant merite une visite.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="flex-footer">
       <div class="credit">réaliser par</div>
-      <div class="resaux">réseaux sociaux</div>
+      <div class="reseaux">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
       </div>
-<hr>
-<div class="flex-footer">
+    </div>
+    <hr>
+    <div class="flex-footer">
       <div class="cours">intégration web 1</div>
       <div class="cegep">cegep de trois-rivière</div>
       <div class="annee">hiver 2026</div>
-      </div>
-    </footer>
-  </body>
+    </div>
+  </footer>
+</body>
+
 </html>

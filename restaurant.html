@@ -9,6 +9,12 @@
   <link rel="stylesheet" href="css/normalize.css" />
   <link rel="stylesheet" href="css/style.css" />
 
+  <script src="script/script.js"></script>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 
@@ -17,19 +23,37 @@
   <!-- Contraintes pour cette page :
 ❏ La disposition des images doit être modifiée aux différents points de rupture
 (minimum de trois dispositions différentes).
-❏ N’oubliez pas de faire au moins 1 commit (Git) pour l’intégration de cette page
 -->
 
-  <header>
-      <div class="img-logo">logo img</div>
-      <div class="txt-logo">logo texte</div>
-      <nav>
+ <header>
+    <div class="img-logo">
+      <img src="" alt=""> 
+      <div class="txt-logo">logo texte</div></div>
+    
+ 
+    <!-- nav desktop -->
+    <nav id="nav-desktop">
         <a class="navbar-nav" href="index.html">Accueil</a>
-        <a class="navbar-nav"href="reservation.html">Réservation</a>
+        <a class="navbar-nav" href="reservation.html">Réservation</a>
         <a class="navbar-nav" href="restaurant.html">Restaurant</a>
         <a class="navbar-nav" href="commande.html">Ma commande</a>
-      </nav>
-    </header>
+    </nav>
+ 
+    <!-- bouton burger -->
+    <button class="burger" id="burger" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+ 
+    <!-- nav mobile -->
+    <nav class="nav-mobile" id="nav-mobile">
+        <a href="index.html">Accueil</a>
+        <a href="reservation.html">Réservation</a>
+        <a href="restaurant.html">Restaurant</a>
+        <a href="commande.html">Ma commande</a>
+    </nav>
+</header>
 
   <section>
 
@@ -39,7 +63,7 @@
       </div>
 
       <div class="carre-small">
-        <img src="/media/resto-img.jpg" alt="Restaurant 2">
+        <img src="/media/img-resto-index2.jpg" alt="Restaurant 2">
       </div>
 
       <div class="carre-large">
@@ -51,7 +75,7 @@
       </div>
 
       <div class="carre-small">
-        <img src="/media/sushi2.jpg" alt="">
+        <img src="/media/img-resto-index3.jpg" alt="Restaurant 3">
       </div>
 
       <div class="carre-small">
@@ -95,7 +119,15 @@
      <footer>
       <div class="flex-footer">
       <div class="credit">réalisé par Emilie Deraps-Larocque</div>
-      <div class="resaux">réseaux sociaux</div>
+      
+      <div class="reseaux">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-tiktok"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+
       </div>
 <hr>
 <div class="flex-footer">

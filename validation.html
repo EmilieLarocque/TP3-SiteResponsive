@@ -1,49 +1,83 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gabarit de site web</title>
-    <meta name="description" content="Page de commande pour le restaurant" />
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style.css" />
 
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gabarit de site web</title>
+  <meta name="description" content="Page de commande pour le restaurant" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/style.css" />
 
-  <body>
+  <script src="script/script.js"></script>
 
-   <header>
-      <div class="img-logo">logo img</div>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+
+  <header>
+    <div class="img-logo">
+      <img src="" alt="">
       <div class="txt-logo">logo texte</div>
-      <nav>
-        <a class="navbar-nav" href="index.html">Accueil</a>
-        <a class="navbar-nav"href="reservation.html">Réservation</a>
-        <a class="navbar-nav" href="restaurant.html">Restaurant</a>
-        <a class="navbar-nav" href="commande.html">Ma commande</a>
-      </nav>
-    </header>
+    </div>
 
-    <main>
+
+    <!-- nav desktop -->
+    <nav id="nav-desktop">
+      <a class="navbar-nav" href="index.html">Accueil</a>
+      <a class="navbar-nav" href="reservation.html">Réservation</a>
+      <a class="navbar-nav" href="restaurant.html">Restaurant</a>
+      <a class="navbar-nav" href="commande.html">Ma commande</a>
+    </nav>
+
+    <!-- bouton burger -->
+    <button class="burger" id="burger" aria-label="Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- nav mobile -->
+    <nav class="nav-mobile" id="nav-mobile">
+      <a href="index.html">Accueil</a>
+      <a href="reservation.html">Réservation</a>
+      <a href="restaurant.html">Restaurant</a>
+      <a href="commande.html">Ma commande</a>
+    </nav>
+  </header>
+
+  <main>
     <section>
-      Votre commande est confirmée! Merci d'avoir commandé chez Niji Sushi. 
-      Nous sommes impatients de vous servir et de vous offrir une expérience culinaire exceptionnelle. 
-      Votre satisfaction est notre priorité, et nous espérons que vous apprécierez chaque bouchée de votre repas. 
+      Votre commande est confirmée! Merci d'avoir commandé chez Niji Sushi.
+      Nous sommes impatients de vous servir et de vous offrir une expérience culinaire exceptionnelle.
+      Votre satisfaction est notre priorité, et nous espérons que vous apprécierez chaque bouchée de votre repas.
       À bientôt chez Niji Sushi!
     </section>
-    </main>
-    <footer>
-      <div class="flex-footer">
+  </main>
+  <footer>
+    <div class="flex-footer">
       <div class="credit">réalisé par Emilie Deraps-Larocque</div>
-      <div class="resaux">réseaux sociaux</div>
+      <div class="reseaux">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
       </div>
-<hr>
-<div class="flex-footer">
+    </div>
+    <hr>
+    <div class="flex-footer">
       <div class="cours">intégration web 1</div>
       <div class="cegep">cegep de trois-rivière</div>
       <div class="annee">hiver 2026</div>
-      </div>
-    </footer>
+    </div>
+  </footer>
 
-  </body>
+</body>
+
 </html>
