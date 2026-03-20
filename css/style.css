@@ -29,6 +29,14 @@ p {
     opacity: .6;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+    }
+
+
 /* scrollbar */
 
 ::-webkit-scrollbar {
@@ -292,7 +300,6 @@ section.présentation-resto {
     gap: 8px;
     background: none;
     border: none;
-    font-family: inherit;
 }
 
 .arrow {
@@ -621,14 +628,14 @@ button,
 [type="button"],
 [type="submit"] {
     width: 100%;
-    display: inline-flex;
     gap: 12px;
     padding: 15px 28px;
     background: linear-gradient(160deg, var(--rose-pale) 0%, var(--rose) 100%);
     border: none;
     border-radius: 10px;
     color: var(--sombre);
-    font-family: 'Cabinet Grotesk', sans-serif;
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
     font-size: .9rem;
     font-weight: 800;
     letter-spacing: .01em;
@@ -711,7 +718,7 @@ button:hover,
 }
 
 .validation-titre {
-    font-family: 'Shippori Mincho', serif;
+    font-family: 'Playfair Display', serif;
     font-size: 1.7rem;
     font-weight: 800;
     color: var(--creme);
@@ -743,7 +750,7 @@ button:hover,
     color: var(--creme);
     text-align: center;
     text-decoration: none;
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Playfair Display', serif;
     font-size: 0.82rem;
     font-weight: 500;
     letter-spacing: 0.14em;
@@ -861,7 +868,6 @@ section.menu {
 .content-menu {
     max-width: 900px;
     overflow: auto;
-    padding: 3%;
 }
 
 .cat-menu {
@@ -870,7 +876,7 @@ section.menu {
 
 /* titres de catégories du menu */
 .cat-menu-title {
-    font-family: 'Shippori Mincho', serif;
+    font-family: 'Playfair Display', serif;
     font-size: 1rem;
     font-weight: 600;
     letter-spacing: .2em;
@@ -972,7 +978,7 @@ td:nth-child(3) {
 }
 
 .recap h2 {
-    font-family: 'Shippori Mincho', serif;
+    font-family: 'Playfair Display', serif;
     font-size: 1.4rem;
     font-weight: 800;
     margin-bottom: 1.8rem;
@@ -1008,13 +1014,13 @@ td:nth-child(3) {
 }
 
 .recap-total .label {
-    font-family: 'Shippori Mincho', serif;
+    font-family: 'Playfair Display', serif;
     font-size: 1rem;
     font-weight: 600;
 }
 
 .recap-total .amount {
-    font-family: 'Shippori Mincho', serif;
+    font-family: 'Playfair Display', serif;
     font-size: 1.8rem;
     font-weight: 800;
     color: var(--or-pale);
@@ -1027,7 +1033,7 @@ td:nth-child(3) {
     color: var(--creme);
     text-align: center;
     text-decoration: none;
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Playfair Display', serif;
     font-size: .85rem;
     font-weight: 500;
     letter-spacing: .12em;
