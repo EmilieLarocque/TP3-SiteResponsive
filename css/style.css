@@ -36,6 +36,21 @@ h1, h2, h3 {
     text-transform: uppercase;
     }
 
+a {
+    text-decoration: none;
+    color: var(--creme);
+    transition: color 0.2s ease;
+}
+
+a:focus {
+    outline: 1.5px solid var(--rose-pale);
+    outline-offset: 3px;
+    border-radius: 2px;
+}
+
+a:active {
+    color: var(--or);
+}
 
 /* scrollbar */
 
@@ -80,7 +95,7 @@ header {
     align-items: center;
 }
 
-.txt-logo {
+a:txt-logo {
     font-size: 24px;
     font-weight: bold;
     padding-left: 5px;
