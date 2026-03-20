@@ -2,30 +2,40 @@
 <html lang="fr">
 
 <head>
+
+  <!-- balise meta -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gabarit de site web</title>
-  <meta name="description" content="Page de commande pour le restaurant" />
+  <meta name="description" content="Réservez votre table chez Sakura Sushi en quelques clics. Choisissez votre date, votre heure et le nombre de convives." />
+
+  <!-- titre de la page -->
+  <title>Sakura Sushi</title>
+
+  <!-- CSS -->
   <link rel="stylesheet" href="css/normalize.css" />
   <link rel="stylesheet" href="css/style.css" />
 
+  <!-- Script - menu burger -->
   <script src="script/script.js"></script>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="media/logo.png" />
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 
 <body>
 
+  <!-- logo -->
   <header>
     <div class="img-logo">
       <img src="media/logo.png" alt="">
       <div class="txt-logo">Niji sushi</div>
     </div>
 
+    <!-- nav desktop -->
     <nav id="nav-desktop">
       <a class="navbar-nav" href="index.html">Accueil</a>
       <a class="navbar-nav" href="reservation.html">Réservation</a>
@@ -33,12 +43,14 @@
       <a class="navbar-nav" href="commande.html">Ma commande</a>
     </nav>
 
+    <!-- bouton navigation burger -->
     <button class="burger" id="burger" aria-label="Menu">
       <span></span>
       <span></span>
       <span></span>
     </button>
 
+    <!-- nav mobile -->
     <nav class="nav-mobile" id="nav-mobile">
       <a href="index.html">Accueil</a>
       <a href="reservation.html">Réservation</a>
@@ -49,11 +61,13 @@
 
   <section class="menu">
     <main>
+      <!-- titre -->
       <h1>Ma Commande</h1>
 
       <div class="content-menu">
 
         <div class="cat-menu">
+          <!-- entrées -->
           <p class="cat-menu-title">Entrées</p>
           <table>
             <thead>
@@ -93,6 +107,7 @@
         </div>
 
         <div class="cat-menu">
+          <!-- plats principaux -->
           <p class="cat-menu-title">Plats Principaux</p>
           <table>
             <thead>
@@ -132,6 +147,7 @@
         </div>
 
         <div class="cat-menu">
+          <!-- boissons et autres -->
           <p class="cat-menu-title">Boissons & Autres</p>
           <table>
             <thead>
@@ -174,16 +190,20 @@
     </main>
 
     <aside class="recap">
+      <!-- titre recap de la commande-->
       <h2>Détails de la commande</h2>
 
+      <!-- sous-total -->
       <div class="recap-line">
         <span>Sous-total</span>
         <span>119.89 $</span>
       </div>
+      <!-- taxes -->
       <div class="recap-line">
         <span>Taxes (15 %)</span>
         <span>17.98 $</span>
       </div>
+      <!-- livraison -->
       <div class="recap-line">
         <span>Livraison</span>
         <span>Gratuite</span>
@@ -191,11 +211,13 @@
 
       <hr />
 
+      <!-- total a payer-->
       <div class="recap-total">
         <span class="label">Total à payer</span>
         <span class="amount">137.87 $</span>
       </div>
 
+      <!-- bouton confirmer la commande -->
       <a class="bouton-confirm" href="validation.html">Confirmer la commande</a>
     </aside>
 
@@ -205,16 +227,18 @@
 
   <footer>
     <div class="flex-footer">
-      <div class="credit">réalisé par Emilie Deraps-Larocque</div>
+      <!-- crédits et réseaux sociaux -->
+      <div class="credit">réaliser par Émilie</div>
       <div class="reseaux">
-        <a href="#"><i class="fab fa-facebook"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-tiktok"></i></a>
-        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="facebook.com"><i class="fab fa-facebook"></i></a>
+        <a href="instagram.com"><i class="fab fa-instagram"></i></a>
+        <a href="twitter.com"><i class="fab fa-twitter"></i></a>
+        <a href="tiktok.com"><i class="fab fa-tiktok"></i></a>
+        <a href="youtube.com"><i class="fab fa-youtube"></i></a>
       </div>
     </div>
     <hr>
+    <!-- cours, cégep et année -->
     <div class="flex-footer">
       <div class="cours">intégration web 1</div>
       <div class="cegep">cegep de trois-rivière</div>

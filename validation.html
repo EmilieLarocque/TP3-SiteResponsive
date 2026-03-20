@@ -2,29 +2,36 @@
 <html lang="fr">
 
 <head>
+    <!-- balise meta -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gabarit de site web</title>
-  <meta name="description" content="Page de commande pour le restaurant" />
+  <meta name="description" content="Votre commande Sakura Sushi est confirmée. Merci pour votre confiance — un courriel de confirmation vous a été envoyé." />
+  
+  <!-- titre de la page -->
+  <title>Sakura Sushi</title>
+
+  <!-- CSS -->
   <link rel="stylesheet" href="css/normalize.css" />
   <link rel="stylesheet" href="css/style.css" />
 
+  <!-- Script - menu burger -->
   <script src="script/script.js"></script>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="media/logo.png" />
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 
 <body>
 
   <header>
+    <!-- logo-->
 <div class="img-logo">
       <img src="media/logo.png" alt=""> 
       <div class="txt-logo">Niji sushi</div></div>
-
 
     <!-- nav desktop -->
     <nav id="nav-desktop">
@@ -52,19 +59,26 @@
 
   <main>
     <section class="validation">
+      <!-- fond de la validation de commande -->
       <div class="validation-card">
  
         <div class="validation-bandeau">
+          <!-- check de validation -->
           <div class="icone-cercle">
             <i class="fas fa-check"></i>
           </div>
+
+          <!-- titre réservation confirmé -->
           <h1 class="validation-titre">Réservation confirmée</h1>
+
+          <!-- remerciement-->
           <p class="validation-sous-titre">Merci pour votre confiance</p>
         </div>
  
         <div class="validation-corps">
  
            <div class="validation-actions">
+            <!-- lien pour retour/nouvelle commande-->
             <a class="btn-accueil" href="index.html">Retour à l'accueil</a>
             <a class="btn-menu" href="commande.html">Passer une nouvelle commande</a>
           </div>
@@ -73,25 +87,27 @@
       </div>
     </section>
   </main>
+
   <footer>
     <div class="flex-footer">
-      <div class="credit">réalisé par Emilie Deraps-Larocque</div>
+      <!-- crédits et réseaux sociaux -->
+      <div class="credit">réaliser par Émilie</div>
       <div class="reseaux">
-        <a href="#"><i class="fab fa-facebook"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-tiktok"></i></a>
-        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="facebook.com"><i class="fab fa-facebook"></i></a>
+        <a href="instagram.com"><i class="fab fa-instagram"></i></a>
+        <a href="twitter.com"><i class="fab fa-twitter"></i></a>
+        <a href="tiktok.com"><i class="fab fa-tiktok"></i></a>
+        <a href="youtube.com"><i class="fab fa-youtube"></i></a>
       </div>
     </div>
     <hr>
+    <!-- cours, cégep et année -->
     <div class="flex-footer">
       <div class="cours">intégration web 1</div>
       <div class="cegep">cegep de trois-rivière</div>
       <div class="annee">hiver 2026</div>
     </div>
   </footer>
-
 </body>
 
 </html>
