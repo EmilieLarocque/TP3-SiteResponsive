@@ -14,6 +14,7 @@
 /* Style général du site */
 
 body {
+
     font-family: Arial, sans-serif;
     font-size: 14px;
     margin: 0;
@@ -31,10 +32,12 @@ p {
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: 'Playfair Display', serif;
     text-transform: uppercase;
-    }
+}
 
 a {
     text-decoration: none;
@@ -70,16 +73,28 @@ a:active {
     background-color: var(--rose-pale);
 }
 
+section {
+    width: 1200px;
+    margin: 0 auto;
+}
+
 /* En-tête / header */
 
 header {
+    width: 1190px;
     background-color: var(--sombre);
     color: var(--creme);
-    padding: 20px;
+    padding: 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     text-transform: uppercase;
+    margin: auto;
+}
+
+header {
+    position: relative;
+    z-index: 1;
 }
 
 .img-logo img {
@@ -160,6 +175,10 @@ a:txt-logo {
     align-items: center;
     z-index: 999;
     padding: 0;
+}
+
+.burger {
+    z-index: 1000;
 }
 
 .nav-mobile.ouverte a {
@@ -250,9 +269,9 @@ a.navbar-nav:active {
 }
 
 section.présentation-resto {
-    padding: 0px;
+    width: 1190px;
+    padding: 10px;
     background-color: var(--creme);
-    margin: 0px;
     border-radius: 8px;
     display: flex;
     align-items: center;
@@ -427,8 +446,9 @@ section.présentation-resto {
 
 
 section.témoignages {
+    width: 1190px;
     border-top: 0.5px solid var(--rose-pale);
-    padding: 20px;
+    padding: 10px;
     background-color: var(--creme);
 }
 
@@ -518,13 +538,13 @@ img.img-temoignage:hover {
 /* formulaire de réservation */
 
 .formulaire-reservation {
+    width: 1190px;
     background-image: url(../media/img-resto-index3.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     padding: 20px;
-    margin: 20px;
-    border-radius: 8px;
+    margin: auto;
 }
 
 form {
@@ -872,16 +892,17 @@ button:hover,
 
 /* menu */
 section.menu {
+    width: 1190px;
     background-color: var(--creme);
-    padding: 20px;
-    margin: 20px;
-    border-radius: 8px;
+    padding: 10px;
+    margin: auto;
     display: flex;
     gap: 50px;
+    justify-content: space-between;
 }
 
 .content-menu {
-    max-width: 900px;
+    width: 850px;
     overflow: auto;
 }
 
@@ -1065,12 +1086,14 @@ td:nth-child(3) {
 /* footer */
 
 footer {
+    width: 1190px;
     background-color: var(--sombre);
     color: var(--creme);
     text-align: center;
     padding: 10px;
     margin-top: 20px;
     text-transform: uppercase;
+    margin: auto;
 }
 
 footer div {
@@ -1109,8 +1132,8 @@ footer div {
     }
 
     form {
-        width: 85%;
-        margin-left: 5%;
+        width: 55%;
+        margin-left: 37%;
     }
 
     /* GRILLE — reste 3 colonnes mais on resserre */
@@ -1152,6 +1175,12 @@ footer div {
 }
 
 @media (max-width: 960px) {
+
+    header {
+        width: 96%;
+        padding: 14px 20px;
+    }
+
     .burger {
         display: flex;
         align-items: flex-end;
@@ -1161,7 +1190,9 @@ footer div {
         display: none;
     }
 
+
     .formulaire-reservation {
+        width: 97%;
         margin: 10px;
         padding: 10px;
         background-position: center;
@@ -1235,6 +1266,7 @@ footer div {
         flex-direction: column;
         gap: 2rem;
         margin: 10px;
+        font-size: 14px;
     }
 
     .content-menu {
@@ -1248,10 +1280,16 @@ footer div {
     }
 }
 
-@media (max-width: 570px) {
+
+@media (max-width: 560px) {
+
+    body {
+        width: 100%;
+    }
+
     .burger {
         display: flex;
-        align-items: flex-end;
+        width: 24px;
     }
 
     #nav-desktop {
@@ -1259,11 +1297,79 @@ footer div {
     }
 
     header {
+        width: 100%;
         padding: 14px 16px;
+        box-sizing: border-box;
     }
 
-    .box-principal-section {
-        flex-direction: column-reverse;
+    .tags {
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+
+
+
+    .donnes {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .dot {
+        display: none;
+    }
+
+    .img-bg-droite {
+        height: 260px;
+    }
+
+    .an,
+    .card {
+        display: none;
+    }
+
+    section.bottom-bar {
+        padding: 0;
+    }
+
+    .bottom-item {
+        padding: 12px 16px;
+    }
+
+
+    .title-avis {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        gap: 4px;
+        padding: 0 10px;
+    }
+
+    section.témoignages,
+    section,
+    .box-principal-section,
+    section.présentation-resto {
+        width: 100%;
+    }
+
+    .grid-temoignages {
+        grid-template-columns: 1fr;
+        width: 45%;
+        margin: 0;
+    }
+
+    .temoignage-background {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+        width: 90%;
+        box-sizing: border-box;
+    }
+
+    .temoignage-content {
+        max-height: 81px;
+        overflow: auto;
+        width: 100%;
     }
 
     .formulaire-reservation {
@@ -1331,6 +1437,7 @@ footer div {
 
     /* MENU */
     section.menu {
+        width: 94%;
         padding: 12px;
         margin: 8px;
         border-radius: 4px;
@@ -1353,4 +1460,9 @@ footer div {
     .recap-total .amount {
         font-size: 1.4rem;
     }
+
+    footer {
+        width: 100%;
+    }
+
 }
